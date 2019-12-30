@@ -1,12 +1,19 @@
 import React from 'react';
-import Data from '../../component/data-diri';
+import Apps from '../../component/appbar';
+import Container from '@material-ui/core/Container';
+import Cardj from '../../component/card-jenis'
+import Fasts from '../../component/fast-food'
+import  Nav from '../../component/navigation'
+
 
 function Home() {
   return (
-    <div>
-      <h1>hallo ini home</h1>
-      <Data nama="eva" umur='5' tanggal='5'/>
-    </div>
+    <Container maxWidth="xs">
+      <Apps title="ini home" />
+      <Cardj/>
+      <Fasts/>
+      <Nav/>
+    </Container>
   );
 }
 export default Home;
